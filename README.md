@@ -1,6 +1,6 @@
 # ECON 5560: Individual replication repository
 
-GitHub account: **danytrampe**. This is Daniel Trampe's individual version-control assignment using Team 3's existing replication project. The replication code was developed collaboratively by Team 3, with Mathew and Alistair repsonsible for the primary coding implmentation. 
+GitHub account: **danytrampe**. This is Daniel Trampe's individual version-control assignment using Team 3's existing replication project. The replication code was developed collaboratively by Team 3, with Mathew and Alistair repsonsible for the primary coding implementation. 
 
 ## Paper and scope
 
