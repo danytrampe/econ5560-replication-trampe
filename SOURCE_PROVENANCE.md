@@ -1,6 +1,6 @@
 # Code and exhibit provenance
 
-This individual repository packages the main `Data-Parsing/` pipeline from Team 3's replication project: https://github.com/matthewstar05/ECON5560-Team3. That URL identifies the pre-existing team source, not the GitHub account used to create or publish this individual assignment. This assignment is published only as `matthew-suban-slo/econ5560-replication-suban`.
+This individual repository packages the main `Data-Parsing/` pipeline from Team 3's replication project: https://github.com/matthewstar05/ECON5560-Team3. That URL identifies the pre-existing team source, not the GitHub account used to create or publish this individual assignment. This individual assignment is published as danieltrampe/econ5560-replication-trampe. The replication code originated from Team 3's shared project and was packaged for independent verification using Mathew's repository.
 
 The local team subtree was introduced into MSQE_Stuff by commit `230529f45eb335175f9cd113b50c7db608b869ef`, which names upstream subtree commit `33db22d100038730253afbd60576a0e01602a271`. Numbered analysis scripts, `common.py`, the optional R check and notebook, dashboard template, historical replication log, and the published exhibit images are inherited and attributed to that team project and, for the original exhibits, Eppink et al. (2016).
 

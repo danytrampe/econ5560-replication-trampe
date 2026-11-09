@@ -1,6 +1,6 @@
 # ECON 5560: Individual replication repository
 
-GitHub account: **matthew-suban-slo**. This is Matthew Suban's individual version-control assignment using Team 3's existing replication project. Repository: https://github.com/matthew-suban-slo/econ5560-replication-suban.
+GitHub account: **danytrampe**. This is Daniel Trampe's individual version-control assignment using Team 3's existing replication project. The replication code was developed collaboratively by Team 3, with Mathew and Alistair repsonsible for the primary coding implmentation. 
 
 ## Paper and scope
 
@@ -17,8 +17,8 @@ The data are the authors' public **S1 Table: Choice experiment responses**, link
 Use **Python 3.12** and a terminal. No R, Stata, Jupyter, or internet connection is needed for the pipeline after the Python packages are installed. From a new working folder on macOS or Linux:
 
 ```bash
-git clone https://github.com/matthew-suban-slo/econ5560-replication-suban.git
-cd econ5560-replication-suban
+git clone https://github.com/danytrampe/econ5560-replication-trampe.git
+cd econ5560-replication-trampe
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -33,13 +33,13 @@ For the assignment's fresh-clone check, delete everything **inside** `outputs/` 
 
 ## Software and packages
 
-The verified environment uses Python **3.12.12** on macOS. Direct requirements are pinned in `requirements.txt`: NumPy **1.26.4**, pandas **2.3.3**, SciPy **1.13.1**, statsmodels **0.14.6**, and Matplotlib **3.9.4**. Their exact observed versions appear at the end of the run log; `logs/requirements.txt` is the actual `python -m pip freeze` output, including transitive packages. To recreate the recorded full package set, install from that file instead of the direct requirements. A virtual environment keeps these separate from other coursework.
+The verified environment uses Python **3.12.10** on macOS. Direct requirements are pinned in `requirements.txt`: NumPy **1.26.4**, pandas **2.3.3**, SciPy **1.13.1**, statsmodels **0.14.6**, and Matplotlib **3.9.4**. Their exact observed versions appear at the end of the run log; `logs/requirements.txt` is the actual `python -m pip freeze` output, including transitive packages. To recreate the recorded full package set, install from that file instead of the direct requirements. A virtual environment keeps these separate from other coursework.
 
 The walkthrough notebook is optional and is not needed by `run_all.py`; install `requirements-notebook.txt` to use it. The optional independent R check requires R and `survival`; run `Rscript scripts/crosscheck_clogit.R` after the Python pipeline. This optional check is outside the recorded Python run and is not claimed as newly verified here.
 
 ## Runtime and fresh-clone evidence
 
-The verified full run took **532.00 seconds (8 minutes 52 seconds)** on macOS 27.0.1 arm64 with Python 3.12.12 and regenerated **39 output files**. Both primary mixed-logit models converged; the log contains no warnings or errors. The completed run's elapsed seconds, source commit, completion timestamp, output count, and validation results are recorded in `logs/run_summary.json` and the final 20 log lines. The full mixed-logit sensitivity analysis is included (2,000 primary draws, plus twenty 500-draw fits per sample), so runtime depends on CPU speed and can take several minutes. `logs/FRESH_CLONE.md` records the measured runtime and the exact fresh-clone procedure after verification. Every committed result in `outputs/` is regenerated from raw data during that run; no previous results are used as inputs.
+The verified full run took **505.00 seconds (8 minutes 26 seconds)** on macOS 14.4 arm64 with Python 3.12.10 and regenerated **39 output files**. Both primary mixed-logit models converged; the log contains no warnings or errors. The completed run's elapsed seconds, source commit, completion timestamp, output count, and validation results are recorded in `logs/run_summary.json` and the final 20 log lines. The full mixed-logit sensitivity analysis is included (2,000 primary draws, plus twenty 500-draw fits per sample), so runtime depends on CPU speed and can take several minutes. `logs/FRESH_CLONE.md` records the measured runtime and the exact fresh-clone procedure after verification. Every committed result in `outputs/` is regenerated from raw data during that run; no previous results are used as inputs.
 
 ## Files and outputs
 
