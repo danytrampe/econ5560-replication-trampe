@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "completed_utc": "2026-11-09T03:52:46.761615+00:00",
-  "elapsed_seconds": 532.0,
+  "completed_utc": "2026-11-09T22:41:51.549843+00:00",
+  "elapsed_seconds": 491.76,
   "raw_sha256": "ea292824db6b36ef18961aa954f0cb7964af5a7285d7e479840cf7aef19f3df2",
   "complete_respondents": 164,
   "complete_rows": 1968,
@@ -10,7 +10,7 @@
     "m3": true,
     "m4": true
   },
-  "python": "3.12.12",
+  "python": "3.12.10",
   "packages": {
     "numpy": "1.26.4",
     "pandas": "2.3.3",

@@ -39,7 +39,7 @@ The walkthrough notebook is optional and is not needed by `run_all.py`; install 
 
 ## Runtime and fresh-clone evidence
 
-The verified full run took **505.00 seconds (8 minutes 26 seconds)** on macOS 14.4 arm64 with Python 3.12.10 and regenerated **39 output files**. Both primary mixed-logit models converged; the log contains no warnings or errors. The completed run's elapsed seconds, source commit, completion timestamp, output count, and validation results are recorded in `logs/run_summary.json` and the final 20 log lines. The full mixed-logit sensitivity analysis is included (2,000 primary draws, plus twenty 500-draw fits per sample), so runtime depends on CPU speed and can take several minutes. `logs/FRESH_CLONE.md` records the measured runtime and the exact fresh-clone procedure after verification. Every committed result in `outputs/` is regenerated from raw data during that run; no previous results are used as inputs.
+The verified full run took **491.76 seconds (8 minutes 12 seconds)** on macOS 14.4 arm64 with Python 3.12.10 and regenerated **39 output files**. Both primary mixed-logit models converged; the log contains no warnings or errors. The completed run's elapsed seconds, source commit, completion timestamp, output count, and validation results are recorded in `logs/run_summary.json` and the final 20 log lines. The full mixed-logit sensitivity analysis is included (2,000 primary draws, plus twenty 500-draw fits per sample), so runtime depends on CPU speed and can take several minutes. `logs/FRESH_CLONE.md` records the measured runtime and the exact fresh-clone procedure after verification. Every committed result in `outputs/` is regenerated from raw data during that run; no previous results are used as inputs.
 
 ## Files and outputs
 

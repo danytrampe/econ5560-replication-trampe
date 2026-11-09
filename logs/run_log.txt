@@ -1,5 +1,5 @@
 ECON 5560 replication | matthew-suban-slo
-Started UTC: 2026-11-09T03:43:54.772197+00:00
+Started UTC: 2026-11-09T22:17:27.380290+00:00
 Raw data SHA-256 verified
 
 >>> 01_parse_data.py
@@ -16,7 +16,7 @@ Sample 'Councillors': 123 respondents -> 1,476 rows (paper N = 1,476); 121 by ro
 Respondents per treatment (complete): {1: 57, 2: 52, 3: 55}
 Status quo chosen on 26.7% of cards
 Wrote choice_long.csv (2,160 rows), respondents.csv (180), design_cards.csv (12 cards)
-<<< 01_parse_data.py completed in 10.19 seconds
+<<< 01_parse_data.py completed in 0.96 seconds
 
 >>> 02_descriptives.py
 Table 1 - paper vs. ours
@@ -52,7 +52,7 @@ water       High                 0.711  0.827  0.815
             Medium               0.236  0.269  0.205
 
 Wrote Table 1, Figure 1, choice-rate tables and figures.
-<<< 02_descriptives.py completed in 2.41 seconds
+<<< 02_descriptives.py completed in 0.90 seconds
 
 >>> 03_conditional_logit.py
 
@@ -90,11 +90,11 @@ Low water × $ shown               -0.592 (0.286)  -0.592   (0.286)    yes    -0
 
 20 of 24 coefficient+p-value pairs match the paper to 3 decimals; 1 match on the coefficient only; mismatches: (1) CL · All Residential × $ shown; (2) CL · Councillors Water quality: Medium; (2) CL · Councillors Water quality: Low
 Wrote outputs/tables/table3_cl.csv and outputs/results/cl.json
-<<< 03_conditional_logit.py completed in 50.48 seconds
+<<< 03_conditional_logit.py completed in 51.76 seconds
 
 >>> 04_mixed_logit.py
 
-=== Model (3) ML · All  (184s)
+=== Model (3) ML · All  (1127s)
 log likelihood: primary (2000 draws) -425.36 | paper -421.92 | 20 x 500-draw runs: -426.8 to -418.4
                                           paper          primary    500-draw runs: median [min, max]  paper inside?
 Development: Limited               6.819 (0.002)   7.197***(0.002)        8.63 [  5.75,  18.23]       yes
@@ -110,7 +110,7 @@ Commercial × $ shown               1.754 (0.082)   1.521   (0.142)        1.92 
 Medium water × $ shown            -2.272 (0.064)  -1.656   (0.188)       -2.07 [ -5.46,  -1.44]       yes
 Low water × $ shown               -4.305 (0.018)  -6.978** (0.021)       -6.79 [-13.54,  -3.65]       yes
 
-=== Model (4) ML · Councillors  (134s)
+=== Model (4) ML · Councillors  (119s)
 log likelihood: primary (2000 draws) -317.52 | paper -316.4 | 20 x 500-draw runs: -320.5 to -309.5
                                           paper          primary    500-draw runs: median [min, max]  paper inside?
 Development: Limited               6.878 (0.011)  10.181** (0.038)       13.84 [  7.13,  25.30]        no
@@ -128,15 +128,15 @@ Low water × $ shown               -8.649 (0.015)  -3.053   (0.384)       -6.27 
 
 Paper's ML coefficient inside our 500-draw range: 21 of 24
 Wrote outputs/tables/table3_ml.csv, figures, and outputs/results/ml.json
-<<< 04_mixed_logit.py completed in 319.54 seconds
+<<< 04_mixed_logit.py completed in 275.16 seconds
 
 >>> 05_build_dashboard.py
 Wrote outputs/dashboard/index.html (120 KB)
-<<< 05_build_dashboard.py completed in 0.96 seconds
+<<< 05_build_dashboard.py completed in 0.56 seconds
 
 >>> 06_slide_figures.py
 Wrote slide1_raw_pattern.png, slide2_reproduced.png, slide3_grouping_issue.png, slide4_effect_size.png
-<<< 06_slide_figures.py completed in 1.15 seconds
+<<< 06_slide_figures.py completed in 0.96 seconds
 
 >>> 07_paper_figures.py
 Read choice_long.csv (2,160 rows) and respondents.csv (180 rows); samples: 164 all, 123 councillors
@@ -151,7 +151,7 @@ Read choice_long.csv (2,160 rows) and respondents.csv (180 rows); samples: 164 a
 05 Figure 2 written (model 3), plus 05b comparison and 05c model-4 variant
 Side-by-side comparisons written to outputs/paper_figures/side_by_side/
 Files: 01_table1_respondent_characteristics.png, 01_table1_respondent_characteristics_comparison.csv, 02_table2_attributes_and_levels.png, 03_fig1_responses_per_choice_scenario.png, 03_fig1_responses_per_choice_scenario_comparison.csv, 04_table3_regression_results.png, 04_table3_regression_results_comparison.csv, 05_fig2_treatment_effect_densities.png, 05_fig2_treatment_effect_densities_summary.csv, 05b_fig2_vs_published.png, 05c_fig2_model4_variant.png
-<<< 07_paper_figures.py completed in 62.45 seconds
+<<< 07_paper_figures.py completed in 70.10 seconds
 
 >>> 08_debug_discrepancies.py
 
@@ -192,18 +192,18 @@ Files: 01_table1_respondent_characteristics.png, 01_table1_respondent_characteri
   verdict:   Explained: reporting error in the paper
 
 Wrote outputs/tables/discrepancy_diagnosis.csv (6 diagnosed cells)
-<<< 08_debug_discrepancies.py completed in 84.30 seconds
+<<< 08_debug_discrepancies.py completed in 91.12 seconds
 
 === FINAL RUN AND ENVIRONMENT SUMMARY ===
 Pipeline status: PASS (all eight stages completed)
 Output validation: PASS (samples, choices, numeric tables, exhibits, dashboard)
-GitHub username: matthew-suban-slo
-Repository: https://github.com/matthew-suban-slo/econ5560-replication-suban
-Source commit: 29a17829b4ada0b02c78c4d86b170207b983e837
-Completed UTC: 2026-11-09T03:52:46.761615+00:00
-Full pipeline elapsed: 532.00 seconds
-Python: 3.12.12 (CPython)
-Operating system: macOS-27.0.1-arm64-arm-64bit
+GitHub username: danytrampe
+Repository: https://github.com/danytrampe/econ5560-replication-trampe.git
+Source commit: fe0fff6ffadfe5d57f6365f179f95c3e29a7f0f9
+Completed UTC: 2026-11-09T22:41:51.549843+00:00
+Full pipeline elapsed: 491.76 seconds
+Python: 3.12.10 (CPython)
+Operating system: macOS-14.4-arm64-arm-64bit
 numpy: 1.26.4
 pandas: 2.3.3
 scipy: 1.13.1

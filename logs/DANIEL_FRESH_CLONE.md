@@ -2,7 +2,7 @@
 
 Verified November 9, 2026 by Daniel Trampe.
 
-Repository: https://github.com/danieltrampe/econ5560-replication-trampe
+Repository: https://github.com/danytrampe/econ5560-replication-trampe
 
 The repository was cloned into a new folder on my Mac, separate from the original downloaded replication project.
 
